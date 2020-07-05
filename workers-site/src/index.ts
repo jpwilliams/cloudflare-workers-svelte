@@ -1,6 +1,7 @@
 import {
   getAssetFromKV,
   mapRequestToAsset,
+  Options,
 } from "@cloudflare/kv-asset-handler";
 
 /**
@@ -27,9 +28,9 @@ addEventListener("fetch", (event) => {
   }
 });
 
-async function handleEvent(event) {
+async function handleEvent(event: FetchEvent) {
   const url = new URL(event.request.url);
-  let options = {};
+  let options: Partial<Options> = {};
 
   /**
    * You can add custom logic to how we fetch your assets
@@ -72,8 +73,8 @@ async function handleEvent(event) {
  * route on a zone, or if you only want your static content
  * to exist at a specific path.
  */
-function handlePrefix(prefix) {
-  return (request) => {
+function handlePrefix(prefix: string) {
+  return (request: Request) => {
     // compute the default (e.g. / -> index.html)
     let defaultAssetKey = mapRequestToAsset(request);
     let url = new URL(defaultAssetKey.url);

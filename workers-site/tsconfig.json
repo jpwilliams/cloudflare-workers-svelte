@@ -1,0 +1,10 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"],
+  "compilerOptions": {
+    "target": "ES2017",
+    "types": ["@cloudflare/workers-types"],
+    "moduleResolution": "node",
+    "lib": ["ES2020", "WebWorker"]
+  }
+}

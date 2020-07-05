@@ -4,6 +4,7 @@ account_id = ""
 workers_dev = true
 route = ""
 zone_id = ""
+webpack_config = "./workers-site/webpack.config.js"
 
 [site]
 bucket = "./public"
