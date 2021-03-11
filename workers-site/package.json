@@ -8,14 +8,14 @@
     "format": "prettier --write src/**/*.{js,ts,css,json,md}"
   },
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "~0.0.11"
+    "@cloudflare/kv-asset-handler": "0.0.11"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^2.0.0",
-    "prettier": "^2.0.5",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.6",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "@cloudflare/workers-types": "2.0.0",
+    "prettier": "2.0.5",
+    "ts-loader": "7.0.5",
+    "typescript": "3.9.6",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.12"
   }
 }
