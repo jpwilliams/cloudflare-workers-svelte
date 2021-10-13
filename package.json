@@ -24,6 +24,6 @@
     "typescript": "3.9.9"
   },
   "dependencies": {
-    "sirv-cli": "0.4.6"
+    "sirv-cli": "1.0.14"
   }
 }
